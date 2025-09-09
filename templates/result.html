@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Analysis Results</title>
+     <link rel="icon" href="{{ url_for('static', filename='favicon.ico') }}" type="image/x-icon">
+    <style>
+        body { font-family: Arial, sans-serif; max-width: 800px; margin: 40px auto; padding: 20px; }
+        .container { border: 2px solid #3366cc; padding: 20px; border-radius: 10px; }
+        h1 { color: #3366cc; text-align: center; }
+        .result { font-size: 24px; font-weight: bold; padding: 15px; border-radius: 5px; text-align: center; }
+        .phishing { background-color: #ffcccc; color: #cc0000; }
+        .legitimate { background-color: #ccffcc; color: #006600; }
+        .info-box { background-color: #f0f0f0; padding: 15px; border-radius: 5px; margin: 10px 0; }
+        .rules-list { background-color: #fff3cd; padding: 10px; border-left: 4px solid #ffc107; }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h1>🔍 Analysis Results</h1>
+        
+        <div class="result {{ 'phishing' if 'PHISHING' in result else 'legitimate' }}">
+            {{ result }}
+        </div>
+        
+        <div class="info-box">
+            <h3>Message Analyzed:</h3>
+            <p><em>"{{ message }}"</em></p>
+        </div>
+        
+        <div class="info-box">
+            <h3>AI Analysis:</h3>
+            <p>Prediction: <strong>{{ ai_result }}</strong> (Confidence: {{ confidence }})</p>
+        </div>
+        
+        {% if rules_found %}
+        <div class="info-box">
+            <h3>Expert System Detection:</h3>
+            <p>The following phishing indicators were found:</p>
+            <ul class="rules-list">
+                {% for rule in rules_triggered %}
+                <li>{{ rule }}</li>
+                {% endfor %}
+            </ul>
+        </div>
+        {% endif %}
+        
+        <br>
+        <button onclick="window.history.back()">Analyze Another Message</button>
+        <p><em>Hybrid AI-Expert System | Daniel Muoka (@SirDaniel)</em></p>
+    </div>
+</body>
+</html>
