@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Phishing Detector</title>
+     <link rel="icon" href="{{ url_for('static', filename='favicon.ico') }}" type="image/x-icon">    
+    <style>
+        body { font-family: Arial, sans-serif; max-width: 800px; margin: 40px auto; padding: 20px; }
+        .container { border: 2px solid #3366cc; padding: 20px; border-radius: 10px; }
+        h1 { color: #3366cc; text-align: center; }
+        textarea { width: 100%; height: 120px; margin: 10px 0; padding: 10px; }
+        button { background-color: #3366cc; color: white; padding: 10px 20px; border: none; border-radius: 5px; cursor: pointer; }
+        button:hover { background-color: #254e9c; }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h1>🔒 Phishing Detection System</h1>
+        <p>Enter a message below to check if it's a phishing attempt:</p>
+        
+        <form action="/predict" method="post">
+            <textarea name="message" placeholder="Paste the email or message content here..." required></textarea>
+            <br>
+            <button type="submit">Analyze Message</button>
+        </form>
+        
+        <p><em>Developed by Daniel Muoka (@SirDaniel) - Karatina University</em></p>
+    </div>
+</body>
+</html>
