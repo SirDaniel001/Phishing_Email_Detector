@@ -12,7 +12,7 @@ print("="*55)
 
 # --- Get the correct base directory path ---
 BASE_DIR = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
-
+STATIC_PATH = os.path.join(BASE_DIR, '..', 'static')
 # --- Load the Model and Vectorizer ---
 print("[1/4] Loading AI model and vectorizer...")
 model_path = os.path.join(BASE_DIR, 'models', 'optimized_random_forest_model.joblib')
@@ -109,6 +109,11 @@ def predict():
                          confidence=confidence_percent,
                          rules_triggered=rules,
                          rules_found=rule_trig)
+
+# === ADD THIS FAVICON ROUTE ===
+@app.route('/favicon.ico')
+def favicon():
+    return ''  # Return empty response to stop 404 errors
 
 print("   ✅ Web application setup complete!")
 print("="*55)

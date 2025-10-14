@@ -2,17 +2,27 @@
 import joblib
 import re
 import pandas as pd
+import os
 from sklearn.metrics import classification_report, accuracy_score
 
 print("🤖🔍 Starting Day 5: Building Hybrid AI-Expert System")
 print("="*55)
 
+# --- Get the correct base directory path ---
+BASE_DIR = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
+
 # --- Load the Optimized Model and Data ---
 print("[1/5] Loading optimized model and test data...")
-model = joblib.load('../models/optimized_random_forest_model.joblib')
-vectorizer = joblib.load('../models/tfidf_vectorizer.joblib')
-X_test = joblib.load('../data/X_test_tfidf.joblib')
-y_test = joblib.load('../data/y_test.joblib')
+model_path = os.path.join(BASE_DIR, 'models', 'optimized_random_forest_model.joblib')
+vectorizer_path = os.path.join(BASE_DIR, 'models', 'tfidf_vectorizer.joblib')
+X_test_path = os.path.join(BASE_DIR, 'data', 'X_test_tfidf.joblib')
+y_test_path = os.path.join(BASE_DIR, 'data', 'y_test.joblib')
+data_csv_path = os.path.join(BASE_DIR, 'data', 'spam_cleaned.csv')
+
+model = joblib.load(model_path)
+vectorizer = joblib.load(vectorizer_path)
+X_test = joblib.load(X_test_path)
+y_test = joblib.load(y_test_path)
 
 # --- Define Expert System Rules ---
 print("[2/5] Defining expert system rules for phishing...")
@@ -31,7 +41,7 @@ def expert_system_rules(text):
         rules_triggered.append("Urgency language")
     
     # Rule 2: Financial incentives and prizes
-    incentive_keywords = ['free', 'win', 'winner', 'prize', 'reward', 'million', 'cash']
+    incentive_keywords = ['free', 'win', 'winner', 'prize', 'reward', 'million', 'cash','cashy']
     if any(keyword in text for keyword in incentive_keywords):
         rules_triggered.append("Financial incentive")
     
@@ -100,7 +110,7 @@ for i, msg in enumerate(test_messages):
 # --- Evaluate Hybrid System on Full Test Set ---
 print("[5/5] Evaluating hybrid system on full test dataset...")
 # Load the original test messages for rule checking
-df_test = pd.read_csv('../data/spam_cleaned.csv')
+df_test = pd.read_csv(data_csv_path)
 test_messages = df_test['message'].iloc[y_test.index]  # Align with the test labels
 
 # Get predictions from both AI alone and the hybrid system
