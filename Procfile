@@ -1,1 +1,1 @@
-web: python code/combined_app.py
+web: python code/simple_bot.py
