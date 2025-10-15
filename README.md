@@ -16,8 +16,6 @@ This project implements a hybrid **AI (Machine Learning) and Expert System** to 
 
 ## 📂 Project Structure
 
-## 📂 Project Structure
-
 ```text
 Phishing_Email_Detector/
 ├── code/          # Python scripts for data processing, modeling, and application
