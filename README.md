@@ -186,7 +186,7 @@ Chat Platform: Python-Telegram-Bot API
 Data Processing: Pandas, NumPy, Joblib
 Model Persistence: Joblib serialization
 
-#🔧 Project Structure
+🔧 Project Structure
 Phishing_Email_Detector/
 ├── code/                 # Source code
 │   ├── telegram_bot.py   # Telegram bot interface
