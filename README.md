@@ -148,9 +148,17 @@ Find your bot on Telegram and send:
 
 ## 💬 Using the Telegram Bot
 # Available Commands
-```text /start ```- Welcome message and instructions
-```text /help ```- Detailed usage guide
-```text /analyze ```[text] - Analyze specific text
+```text 
+/start
+```
+- Welcome message and instructions
+```text
+/help ```
+- Detailed usage guide
+```text
+/analyze
+```
+[text] - Analyze specific text
 Any message - Automatic phishing analysis
 Example Usage
 User: URGENT: Your bank account suspended! Click: bit.ly/fake-link
