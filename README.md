@@ -23,6 +23,7 @@ Phishing_Email_Detector/
 ├── docs/          # Documentation, reports, and presentations
 ├── models/        # Saved trained models
 └── venv/          # Python virtual environment
+```
 
 ## 📊 Dataset
 **Source:** SMS Spam Collection Dataset from Kaggle  
@@ -108,34 +109,48 @@ A hybrid AI system that detects phishing emails with 97% accuracy, featuring bot
 ## 🎯 Quick Start
 
 ### Local Installation
+```text
 git clone https://github.com/SirDaniel001/Phishing_Email_Detector.git
 cd Phishing_Email_Detector
+```
 
 # Install dependencies
+```text
 pip install -r requirements.txt
+```
 
- Run web application
+# Run web application
+ ```text
 python code/app.py
+```
 # Visit: http://127.0.0.1:5000
 
 #Run Telegram bot (in separate terminal)
+```text
 python code/telegram_bot.py
+```
 
 🏃‍♂️ Running the Telegram Bot
 Set up Telegram Bot (one-time):
+```text
 export TELEGRAM_BOT_TOKEN="your_bot_token_here"
+```
 
 Start the bot:
+```text
 python code/telegram_bot.py
+```
 
 Find your bot on Telegram and send:
+```text
 /start
+````
 
-💬 Using the Telegram Bot
-Available Commands
-/start - Welcome message and instructions
-/help - Detailed usage guide
-/analyze [text] - Analyze specific text
+## 💬 Using the Telegram Bot
+# Available Commands
+```text /start ```- Welcome message and instructions
+```text /help ```- Detailed usage guide
+```text /analyze ```[text] - Analyze specific text
 Any message - Automatic phishing analysis
 Example Usage
 User: URGENT: Your bank account suspended! Click: bit.ly/fake-link
@@ -160,6 +175,7 @@ See rule triggers and explanations
 Professional UI with real-time processing
 
 🏗️ System Architecture
+```text
 User Input → Hybrid AI System → Analysis Results
     ↓              ↓               ↓
  Telegram     ML Model +      🛡️ Safe / 🚨 Phishing
@@ -167,27 +183,29 @@ User Input → Hybrid AI System → Analysis Results
     ↓              ↓               ↓
  Web App      Feature         Detailed Report
             Extraction
+```
 
-Core Components
+# Core Components
 telegram_bot.py - Bot interface and message handling
 simple_detector.py - Optimized model loading for real-time use
 hybrid_system.py - ML + rule-based decision engine
 app.py - Flask web application
 
-📈 Model Performance
+# 📈 Model Performance
 Metric  	AI-Alone	Hybrid System
 Accuracy	97.94%  	97.76%
 Precision	98%     	98%
 Recall   	85%     	85%
 
-🛠️ Technical Stack
+# 🛠️ Technical Stack
 Machine Learning: Scikit-learn, Random Forest, TF-IDF
 Web Framework: Flask, HTML/CSS
 Chat Platform: Python-Telegram-Bot API
 Data Processing: Pandas, NumPy, Joblib
 Model Persistence: Joblib serialization
 
-🔧 Project Structure
+# 🔧 Project Structure
+```text 
 Phishing_Email_Detector/
 ├── code/                 # Source code
 │   ├── telegram_bot.py   # Telegram bot interface
@@ -202,38 +220,40 @@ Phishing_Email_Detector/
 ├── templates/          # Web UI templates
 ├── requirements.txt    # Dependencies
 └── README.md          # This file
+```
 
-🎓 Academic Value
+# 🎓 Academic Value
 This project demonstrates:
 End-to-end ML pipeline from data to deployment
 Hybrid AI systems combining ML with domain knowledge
 Multiple interface design (web + mobile)
 Production considerations and deployment challenges
 
-🔮 Future Enhancements
+# 🔮 Future Enhancements
 Cloud deployment for 24/7 access
 Multi-language support
 Advanced phishing pattern detection
 User analytics dashboard
 Email integration
 
-👨‍💻 Author
+# 👨‍💻 Author
 Daniel - Cybersecurity & AI Enthusiast
 GitHub: @SirDaniel001
 Project: Phishing Email Detector
-📄 License
+
+# 📄 License
 This project is open source and available under the MIT License.
 
-🚀 Getting Started
+## 🚀 Getting Started
 
-Prerequisites
+# Prerequisites
 - Python 3.6+
 - Kali Linux (or similar Linux distribution)
 - pip package manager
 
-Installation
+# Installation
 1. Clone or download this project structure
-2. Create virtual environment: `python3 -m venv venv`
+2. Create virtual environment: ` ```textpython3 -m venv venv ``` ` 
 3. Activate environment: `source venv/bin/activate`
 4. Install requirements: `pip install pandas numpy scikit-learn nltk flask matplotlib seaborn`
 
