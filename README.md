@@ -14,7 +14,7 @@ This project implements a hybrid **AI (Machine Learning) and Expert System** to 
 3. To create a functional web application demo for real-time classification.
 4. To demonstrate practical AI skills for cybersecurity applications.
 
-## 📂 Project Structure
+📂 Project Structure
 Phishing_Email_Detector/
 ├── code/ # Python scripts for data processing, modeling, and application
 ├── data/ # Dataset storage (raw and cleaned)
