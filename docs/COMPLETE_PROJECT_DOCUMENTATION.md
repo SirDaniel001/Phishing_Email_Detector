@@ -51,7 +51,7 @@ Phishing_Email_Detector/
 ├── 📁 docs/                 → Documentation
 │
 └── 🐍 venv/                 → Python virtual environment
-'''
+```
 
 
 ## 📊 Performance Results
