@@ -8,7 +8,7 @@ A machine learning system that combines artificial intelligence with rule-based 
 **Institution:** Karatina University  
 **Academic Program:** BSc Computer Science (Third Year)  
 **Career Focus:** Cybersecurity Engineering  
-**Target Role:** Security Engineer, Central Bank of Kenya  
+**Target Role:** Security Engineer
 
 ## 🎯 Project Objectives
 - Build an accurate phishing detection AI model (>97% accuracy)
