@@ -95,11 +95,15 @@ python -m venv venv
 source venv/bin/activate
 
 # 3. Install dependencies
+```text
 pip install -r requirements.txt
+```
 
 # 4. Run web application
+```text
 export FLASK_APP=code/app.py
 flask run --debug
+```
 
 📈 Future Enhancements
 Real email integration (IMAP/POP3)
