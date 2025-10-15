@@ -113,11 +113,11 @@ cd Phishing_Email_Detector
 # Install dependencies
 pip install -r requirements.txt
 
-# Run web application
+ Run web application
 python code/app.py
 # Visit: http://127.0.0.1:5000
 
-# Run Telegram bot (in separate terminal)
+#Run Telegram bot (in separate terminal)
 python code/telegram_bot.py
 
 🏃‍♂️ Running the Telegram Bot
@@ -130,7 +130,7 @@ python code/telegram_bot.py
 Find your bot on Telegram and send:
 /start
 
-#💬 Using the Telegram Bot
+💬 Using the Telegram Bot
 Available Commands
 /start - Welcome message and instructions
 /help - Detailed usage guide
@@ -139,7 +139,7 @@ Any message - Automatic phishing analysis
 Example Usage
 User: URGENT: Your bank account suspended! Click: bit.ly/fake-link
 
-#Bot: 🔍 Phishing Analysis Complete
+Bot: 🔍 Phishing Analysis Complete
 
 Final Verdict: 🚨 PHISHING DETECTED
 AI Prediction: SPAM (64.8% confidence)
@@ -158,7 +158,7 @@ View detailed results with confidence scores
 See rule triggers and explanations
 Professional UI with real-time processing
 
-#🏗️ System Architecture
+🏗️ System Architecture
 User Input → Hybrid AI System → Analysis Results
     ↓              ↓               ↓
  Telegram     ML Model +      🛡️ Safe / 🚨 Phishing
@@ -167,19 +167,19 @@ User Input → Hybrid AI System → Analysis Results
  Web App      Feature         Detailed Report
             Extraction
 
-#Core Components
+Core Components
 telegram_bot.py - Bot interface and message handling
 simple_detector.py - Optimized model loading for real-time use
 hybrid_system.py - ML + rule-based decision engine
 app.py - Flask web application
 
-#📈 Model Performance
+📈 Model Performance
 Metric  	AI-Alone	Hybrid System
 Accuracy	97.94%  	97.76%
 Precision	98%     	98%
 Recall   	85%     	85%
 
-#🛠️ Technical Stack
+🛠️ Technical Stack
 Machine Learning: Scikit-learn, Random Forest, TF-IDF
 Web Framework: Flask, HTML/CSS
 Chat Platform: Python-Telegram-Bot API
@@ -202,7 +202,7 @@ Phishing_Email_Detector/
 ├── requirements.txt    # Dependencies
 └── README.md          # This file
 
-##🎓 Academic Value
+🎓 Academic Value
 This project demonstrates:
 End-to-end ML pipeline from data to deployment
 Hybrid AI systems combining ML with domain knowledge
@@ -216,36 +216,36 @@ Advanced phishing pattern detection
 User analytics dashboard
 Email integration
 
-#👨‍💻 Author
+👨‍💻 Author
 Daniel - Cybersecurity & AI Enthusiast
 GitHub: @SirDaniel001
 Project: Phishing Email Detector
-#📄 License
+📄 License
 This project is open source and available under the MIT License.
 
-## 🚀 Getting Started
+🚀 Getting Started
 
-### Prerequisites
+Prerequisites
 - Python 3.6+
 - Kali Linux (or similar Linux distribution)
 - pip package manager
 
-### Installation
+Installation
 1. Clone or download this project structure
 2. Create virtual environment: `python3 -m venv venv`
 3. Activate environment: `source venv/bin/activate`
 4. Install requirements: `pip install pandas numpy scikit-learn nltk flask matplotlib seaborn`
 
-### Usage
+Usage
 1. Ensure virtual environment is activated: `source venv/bin/activate`
 2. Run data cleaning: `python code/clean_data.py`
 3. Execute main training script: `python code/train_model.py`
 4. Launch web application: `python code/app.py`
 
-## 📝 License
+ 📝 License
 © 2025 Daniel Muoka (@SirDaniel). This project is licensed for academic use at Karatina University. All rights reserved.
 
-## 🤝 Acknowledgments
+🤝 Acknowledgments
 - Karatina University Computer Science Department
 - Apache SpamAssassin for public dataset
 - Kaggle community for data resources
