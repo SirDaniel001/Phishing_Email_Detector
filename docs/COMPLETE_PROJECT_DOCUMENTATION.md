@@ -87,12 +87,16 @@ This project demonstrates competencies in:
 
 ## 🔧 Installation & Usage
 # 1. Clone repository
+```text
 git clone <repository-url>
 cd Phishing_Email_Detector
+```
 
 # 2. Create virtual environment
+```text
 python -m venv venv
 source venv/bin/activate
+```
 
 # 3. Install dependencies
 ```text
@@ -105,14 +109,14 @@ export FLASK_APP=code/app.py
 flask run --debug
 ```
 
-📈 Future Enhancements
+# 📈 Future Enhancements
 Real email integration (IMAP/POP3)
 Browser extension development
 Real-time threat intelligence feeds
 Multi-language support
 Mobile application version
 
-👨‍💻 Developer Statement
+# 👨‍💻 Developer Statement
 This project represents my commitment to developing practical cybersecurity solutions using artificial intelligence. The hybrid approach demonstrates my understanding that effective security systems combine automated pattern recognition with human expertise and explainable decision-making.
 
 © 2025 Daniel Muoka (@SirDaniel) | Karatina University | P101/4338G/23
