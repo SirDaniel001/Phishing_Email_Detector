@@ -153,7 +153,8 @@ Find your bot on Telegram and send:
 ```
 - Welcome message and instructions
 ```text
-/help ```
+/help
+```
 - Detailed usage guide
 ```text
 /analyze
