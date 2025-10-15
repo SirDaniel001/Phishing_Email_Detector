@@ -24,26 +24,34 @@ A machine learning system that combines artificial intelligence with rule-based 
 - **Environment:** Kali Linux, Virtual Environments
 - **Data Serialization:** Joblib
 
-## 📁 Project Structure
+## 📂 Project Structure
+
+```text
 Phishing_Email_Detector/
-├── code/ # Python scripts
-│ ├── app.py # Flask web application
-│ ├── preprocess_data.py # Data preprocessing
-│ ├── train_model.py # Model training
-│ ├── optimize_model.py # Hyperparameter tuning
-│ └── hybrid_system.py # Hybrid AI-Expert system
-├── data/ # Datasets
-│ ├── spam_cleaned.csv # Cleaned dataset
-│ └── *.joblib # Processed data files
-├── models/ # Machine learning models
-│ ├── optimized_random_forest_model.joblib
-│ ├── best_random_forest_model.joblib
-│ └── tfidf_vectorizer.joblib
-├── templates/ # Web templates
-│ ├── index.html # Main page
-│ └── result.html # Results page
-├── docs/ # Documentation
-└── venv/ # Python virtual environment
+├── 📁 code/                 → Python scripts
+│   ├── 🧠 app.py                 → Flask web application
+│   ├── ⚙️ preprocess_data.py     → Data preprocessing
+│   ├── 🤖 train_model.py         → Model training
+│   ├── 🎯 optimize_model.py      → Hyperparameter tuning
+│   └── 🧩 hybrid_system.py       → Hybrid AI-Expert system
+│
+├── 📁 data/                 → Datasets
+│   ├── 📄 spam_cleaned.csv      → Cleaned dataset
+│   └── 📦 *.joblib             → Processed data files
+│
+├── 📁 models/               → Machine learning models
+│   ├── 🪄 optimized_random_forest_model.joblib
+│   ├── 🧠 best_random_forest_model.joblib
+│   └── 🔤 tfidf_vectorizer.joblib
+│
+├── 📁 templates/            → Web templates
+│   ├── 🏠 index.html            → Main page
+│   └── 📊 result.html           → Results page
+│
+├── 📁 docs/                 → Documentation
+│
+└── 🐍 venv/                 → Python virtual environment
+
 
 
 ## 📊 Performance Results
