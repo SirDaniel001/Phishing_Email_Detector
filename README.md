@@ -6,7 +6,7 @@ This project implements a hybrid **AI (Machine Learning) and Expert System** to 
 **Developer:** Daniel Muoka (@SirDaniel)  
 **Registration Number:** P101/4338G/23  
 **Institution:** Karatina University  
-**Career Goal:** Cybersecurity Expert at the Central Bank of Kenya
+**Career Goal:** Cybersecurity Expert
 
 ## 🎯 Project Objectives
 1. To build a machine learning model that accurately classifies messages as "ham" (legitimate) or "spam" (phishing).
@@ -107,7 +107,6 @@ A hybrid AI system that detects phishing emails with 97% accuracy, featuring bot
 ## 🎯 Quick Start
 
 ### Local Installation
-```bash
 git clone https://github.com/SirDaniel001/Phishing_Email_Detector.git
 cd Phishing_Email_Detector
 
@@ -131,7 +130,7 @@ python code/telegram_bot.py
 Find your bot on Telegram and send:
 /start
 
-💬 Using the Telegram Bot
+#💬 Using the Telegram Bot
 Available Commands
 /start - Welcome message and instructions
 /help - Detailed usage guide
@@ -140,7 +139,7 @@ Any message - Automatic phishing analysis
 Example Usage
 User: URGENT: Your bank account suspended! Click: bit.ly/fake-link
 
-Bot: 🔍 Phishing Analysis Complete
+#Bot: 🔍 Phishing Analysis Complete
 
 Final Verdict: 🚨 PHISHING DETECTED
 AI Prediction: SPAM (64.8% confidence)
@@ -152,18 +151,14 @@ AI Prediction: SPAM (64.8% confidence)
 💡 Recommendation:
 🚨 HIGH RISK - Do not click links or provide information
 
-🌐 Web Interface
+#🌐 Web Interface
 Access the web application at http://127.0.0.1:5000:
-
 Paste suspicious emails for analysis
-
 View detailed results with confidence scores
-
 See rule triggers and explanations
-
 Professional UI with real-time processing
 
-🏗️ System Architecture
+#🏗️ System Architecture
 User Input → Hybrid AI System → Analysis Results
     ↓              ↓               ↓
  Telegram     ML Model +      🛡️ Safe / 🚨 Phishing
@@ -172,25 +167,26 @@ User Input → Hybrid AI System → Analysis Results
  Web App      Feature         Detailed Report
             Extraction
 
-Core Components
+#Core Components
 telegram_bot.py - Bot interface and message handling
 simple_detector.py - Optimized model loading for real-time use
 hybrid_system.py - ML + rule-based decision engine
 app.py - Flask web application
-📈 Model Performance
+
+#📈 Model Performance
 Metric  	AI-Alone	Hybrid System
 Accuracy	97.94%  	97.76%
 Precision	98%     	98%
 Recall   	85%     	85%
 
-🛠️ Technical Stack
+#🛠️ Technical Stack
 Machine Learning: Scikit-learn, Random Forest, TF-IDF
 Web Framework: Flask, HTML/CSS
 Chat Platform: Python-Telegram-Bot API
 Data Processing: Pandas, NumPy, Joblib
 Model Persistence: Joblib serialization
 
-🔧 Project Structure
+#🔧 Project Structure
 Phishing_Email_Detector/
 ├── code/                 # Source code
 │   ├── telegram_bot.py   # Telegram bot interface
@@ -206,7 +202,7 @@ Phishing_Email_Detector/
 ├── requirements.txt    # Dependencies
 └── README.md          # This file
 
-🎓 Academic Value
+##🎓 Academic Value
 This project demonstrates:
 End-to-end ML pipeline from data to deployment
 Hybrid AI systems combining ML with domain knowledge
@@ -220,11 +216,11 @@ Advanced phishing pattern detection
 User analytics dashboard
 Email integration
 
-👨‍💻 Author
+#👨‍💻 Author
 Daniel - Cybersecurity & AI Enthusiast
 GitHub: @SirDaniel001
 Project: Phishing Email Detector
-📄 License
+#📄 License
 This project is open source and available under the MIT License.
 
 ## 🚀 Getting Started
