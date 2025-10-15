@@ -253,9 +253,18 @@ This project is open source and available under the MIT License.
 
 # Installation
 1. Clone or download this project structure
-2. Create virtual environment: ` ```textpython3 -m venv venv ``` ` 
-3. Activate environment: `source venv/bin/activate`
-4. Install requirements: `pip install pandas numpy scikit-learn nltk flask matplotlib seaborn`
+2. Create virtual environment:
+   ```text
+   python3 -m venv venv
+   ``` 
+4. Activate environment:
+   ```text
+   source venv/bin/activate
+   ```
+6. Install requirements:
+   ```text
+   pip install pandas numpy scikit-learn nltk flask matplotlib seaborn
+   ```
 
 Usage
 1. Ensure virtual environment is activated: `source venv/bin/activate`
